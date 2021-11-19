@@ -1,6 +1,7 @@
 package com.gradinfo.spring_boot_grad_info.controller;
 
 import com.gradinfo.spring_boot_grad_info.entity.SysStudent;
+import com.gradinfo.spring_boot_grad_info.entity.SysStudentPost;
 import com.gradinfo.spring_boot_grad_info.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,8 +19,14 @@ public class ProductController {
 //
     @GetMapping("/studentById")
     public SysStudent findProductById(@RequestParam("student_id") String id) {
+
         return service.findById(id);
     }
+//    @GetMapping("/postNumberById")
+//    public String findPostNumberById(@RequestParam("student_id") String id) {
+//
+//        return service.findPostNumberById(id);
+//    }
 //
 //    @GetMapping("/product/{student_name}")
 //    public Product findProductByName(@PathVariable String student_name) {

@@ -1,9 +1,12 @@
 package com.gradinfo.spring_boot_grad_info.service;
 
 import com.gradinfo.spring_boot_grad_info.entity.SysStudent;
+import com.gradinfo.spring_boot_grad_info.entity.SysStudentPost;
 import com.gradinfo.spring_boot_grad_info.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class ProductService {
@@ -16,6 +19,8 @@ public class ProductService {
     public SysStudent findById(String id){
         return repository.findInfoById(id);
     }
+    //public List<SysStudentPost> findAllStudent(String id){return repository.FindPostNumber(id);};
+
 //    public Product saveProduct(Product product){
 //        return repository.save(product);
 //
